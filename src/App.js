@@ -72,7 +72,12 @@ function App() {
           />
         </Route>
         <Route path="/about" element={<About />} />
-        <Route path="/checkout" element={<Checkout />} />
+        <Route
+          path="/checkout"
+          element={
+            <Checkout cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

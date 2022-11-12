@@ -1,7 +1,6 @@
 import Product from "../components/Product";
 function Store(props) {
   const { cartItems, products, onAdd, onRemove } = props;
-
   return (
     <div className="px-5">
       <h1 className="text-2xl font-bold my-2">Store</h1>
